@@ -16,12 +16,19 @@ class ViewController: UIViewController {
     var mutable = 8
 
     @IBAction func submitButtonDidClick(_ sender: Any) {
-        
+        print("Button did click ja")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let inputTextFieldText = inputTextField.text,
-            let inputNumber = Int(inputTextFieldText) {
-            inputTextField.text = FizzBuzzEngine(number: inputNumber).result
+            let destinationVC = segue.destination as? SecondViewController {
+            
+            guard let inputNumber = Int(inputTextFieldText) else {
+                destinationVC.displayData = "Eiei"
+                return //short circuit
+            }
+            destinationVC.displayData = FizzBuzzEngine(number: inputNumber).result
         }
-        
     }
     
 }
