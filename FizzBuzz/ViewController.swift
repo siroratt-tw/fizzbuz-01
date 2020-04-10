@@ -19,15 +19,21 @@ class ViewController: UIViewController {
         print("Button did click ja")
     }
     
+    var result: String {
+        //guard let ~ short the circuit
+        guard let inputTextFieldText = inputTextField.text else {
+            return "Nil Ja"
+        }
+        
+        guard let inputNumber = Int(inputTextFieldText) else {
+            return "Cannot convert ja Eiei"
+        }
+        
+        return FizzBuzzEngine(number: inputNumber).result
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let inputTextFieldText = inputTextField.text,
-            let destinationVC = segue.destination as? SecondViewController {
-            
-            guard let inputNumber = Int(inputTextFieldText) else {
-                destinationVC.displayData = "Eiei"
-                return //short circuit
-            }
-            destinationVC.displayData = FizzBuzzEngine(number: inputNumber).result
+        if let destinationVC = segue.destination as? SecondViewController {
+            destinationVC.displayData = result
         }
     }
     
