@@ -20,3 +20,22 @@ class SecondViewController: UIViewController {
     
 
 }
+
+extension SecondViewController {
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        <#code#>
+//    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        <#code#>
+//    }
+//    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        <#code#>
+//    }
+//    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        <#code#>
+//    }
+    
+}
