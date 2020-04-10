@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var inputTextField: UITextField!
+    
+    let immutable = 8
+    var mutable = 8
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func submitButtonDidClick(_ sender: Any) {
+        
+        if let inputTextFieldText = inputTextField.text,
+            let inputNumber = Int(inputTextFieldText) {
+            inputTextField.text = FizzBuzzEngine(number: inputNumber).result
+        }
+        
     }
-
-
+    
 }
 

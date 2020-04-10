@@ -15,7 +15,8 @@
 		BB3117BF243EDD2D003031BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB3117BD243EDD2D003031BE /* LaunchScreen.storyboard */; };
 		BB3117CA243EDD2D003031BE /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3117C9243EDD2D003031BE /* FizzBuzzTests.swift */; };
 		BB3117D5243EDD2D003031BE /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3117D4243EDD2D003031BE /* FizzBuzzUITests.swift */; };
-		BB3117E3243EE024003031BE /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3117E2243EE024003031BE /* Calculator.swift */; };
+		BB3117E3243EE024003031BE /* FizzBuzzEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3117E2243EE024003031BE /* FizzBuzzEngine.swift */; };
+		BB311823243F1F71003031BE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB311822243F1F71003031BE /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,8 @@
 		BB3117D0243EDD2D003031BE /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3117D4243EDD2D003031BE /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		BB3117D6243EDD2D003031BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB3117E2243EE024003031BE /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		BB3117E2243EE024003031BE /* FizzBuzzEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzEngine.swift; sourceTree = "<group>"; };
+		BB311822243F1F71003031BE /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 				BB3117B6243EDD2A003031BE /* ViewController.swift */,
 				BB3117B8243EDD2A003031BE /* Main.storyboard */,
 				BB3117BB243EDD2D003031BE /* Assets.xcassets */,
-				BB3117E2243EE024003031BE /* Calculator.swift */,
+				BB311822243F1F71003031BE /* View.xib */,
+				BB3117E2243EE024003031BE /* FizzBuzzEngine.swift */,
 				BB3117BD243EDD2D003031BE /* LaunchScreen.storyboard */,
 				BB3117C0243EDD2D003031BE /* Info.plist */,
 			);
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB311823243F1F71003031BE /* View.xib in Resources */,
 				BB3117BF243EDD2D003031BE /* LaunchScreen.storyboard in Resources */,
 				BB3117BC243EDD2D003031BE /* Assets.xcassets in Resources */,
 				BB3117BA243EDD2A003031BE /* Main.storyboard in Resources */,
@@ -263,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB3117B7243EDD2A003031BE /* ViewController.swift in Sources */,
-				BB3117E3243EE024003031BE /* Calculator.swift in Sources */,
+				BB3117E3243EE024003031BE /* FizzBuzzEngine.swift in Sources */,
 				BB3117B3243EDD2A003031BE /* AppDelegate.swift in Sources */,
 				BB3117B5243EDD2A003031BE /* SceneDelegate.swift in Sources */,
 			);

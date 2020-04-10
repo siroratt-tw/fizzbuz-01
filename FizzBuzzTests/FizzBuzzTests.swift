@@ -10,25 +10,30 @@ import XCTest
 @testable import FizzBuzz
 
 class FizzBuzzTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testEightShouldGetEight() {
+        
+//        let vc = ViewController.init(nibName: , bundle: <#T##Bundle?#>)
+//        
+//        vc.submitButtonDidClick(AnyClass())
+//        
+//        XCTAssertEqual(vc.inputTextField.text, "8")
+        
+        
+        
+//        XCTAssertEqual(FizzBuzzEngine(number: 8).result, "8")
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test15ShouldGetFizzBuzz() {
+        XCTAssertEqual(FizzBuzzEngine(number: 15).result, "FizzBuzz")
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test25ShouldGetBuzz() {
+        XCTAssertEqual(FizzBuzzEngine(number: 25).result, "Buzz")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test3ShouldGetFizz() {
+        XCTAssertEqual(FizzBuzzEngine(number: 3).result, "Fizz")
     }
 
 }
